@@ -14,4 +14,22 @@ shopBtn.addEventListener("click", function() {
     const userAge = userAgeInput.value
     console.log(userAge);
 
+    // CALCOLARE IL PREZZO DEL BIGLIETTO IN BASE AI CHILOMETRI SCELTI
+    const price = kmDistance * 0.21;
+    console.log(price);
+
+    // CALCOLIAMO LO SCONTO DEL BIGLIETTO
+
+    if (userAge === "under") {
+        finalPrice = (price - (price * 20 / 100).toFixed(2));
+    } else if (userAge === "over") {
+        finalPrice = (price - (price * 40 / 100).toFixed(2));
+    } else {
+        finalPrice = price
+    }
+    console.log(finalPrice);
+
+    // STAMPIAMO IL PREZZO IN PAGINA
+    document.getElementById("final-price").innerHTML = `Il prezzo del tuo biglietto è: €${finalPrice}`
+    
 } )
