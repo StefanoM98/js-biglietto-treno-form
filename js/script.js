@@ -1,6 +1,12 @@
 // CREIAMO LA FUNZIONE PER COMPRARE IL BIGLIETTO
 const shopBtn = document.getElementById("shop");
 shopBtn.addEventListener("click", function() {
+    // Generare numero per Codice CP
+    const rndNumber = Math.floor(Math.random() * (1000 - 90 + 1)) + 90 ;
+    console.log(rndNumber);
+    // Generare numero per corrazza
+    const anotherNumber = Math.floor(Math.random() * 17) + 1;
+    console.log(anotherNumber);
     // SALVIAMO IL NOME E COGNOME DELL'UTENTE
     const nameSurnameInput = document.getElementById("user-name")
     const nameSurname = nameSurnameInput.value
@@ -20,16 +26,24 @@ shopBtn.addEventListener("click", function() {
 
     // CALCOLIAMO LO SCONTO DEL BIGLIETTO
 
+    let ticket = ""
+
     if (userAge === "under") {
         finalPrice = (price - (price * 20 / 100).toFixed(2));
+        ticket = "sconto del 20%"
     } else if (userAge === "over") {
         finalPrice = (price - (price * 40 / 100).toFixed(2));
+        ticket = "sconto del 40%"
     } else {
         finalPrice = price
+        ticket = "prezzo standard"
     }
     console.log(finalPrice);
 
     // STAMPIAMO IL PREZZO IN PAGINA
-    document.getElementById("final-price").innerHTML = `Il prezzo del tuo biglietto è: €${finalPrice}`
-    
+    document.getElementById("user").innerHTML = `${nameSurname}`
+    document.getElementById("ticket-typeof").innerHTML = `${ticket}`
+    document.getElementById("wagon-num").innerHTML = `${rndNumber}`
+    document.getElementById("cp-code").innerHTML = `${anotherNumber}`
+    document.getElementById("final-price").innerHTML = `€${finalPrice}`
 } )

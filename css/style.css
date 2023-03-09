@@ -1,0 +1,99 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+}
+main {
+    height: 100vh;
+    width: 100%;
+    color: black;
+    background-color: red;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1,
+h2{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+
+.box{
+    width: 70%;
+    height: 250px;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.input {
+    width: 60%;
+    margin: 10px auto;
+    display: flex;
+    text-align: center;
+}
+
+.name,
+.km,
+.age {
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+input {
+    padding: 7px 10px;
+}
+
+button {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.ticket-details{
+    display: flex;
+    padding: 1rem 0;
+}
+
+.ticket-details ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin-bottom: 0;
+    border-top: 1px  solid #808080 ;
+    border-bottom: 1px  solid #808080 ;
+}
+
+.name-surname{
+    width: 30%;
+    height: 140px;
+    background-color:#808080 ;
+    padding: 1.5rem;
+    border: 1px  solid #808080 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticket-details span {
+    font-size: 1.3rem;
+}
+
+.ticket-details ul li p{
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
