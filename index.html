@@ -5,9 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-    
+    <main>
+        <div class="name m-3">
+            <label for="user-name">Nome e Cognome</label>
+            <input type="text" id="user-name">
+        </div>
+
+        <div class="km m-3">
+            <label for="distance">Km da percorrere</label>
+            <input type="text" id="distance">
+        </div>
+
+        <div class="age m-3">
+            <label for="user-age">Fascia d'età</label>
+            <select id="user-age" name="age">
+                <option value="under">-18</option>
+                <option value="normal">19-64</option>
+                <option value="over">65+</option>
+            </select>
+        </div>  
+        
+        <button class="m-3" id="enter">Compra il biglietto</button>
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>
