@@ -2,12 +2,16 @@
 const shopBtn = document.getElementById("shop");
 shopBtn.addEventListener("click", function() {
     // SALVIAMO IL NOME E COGNOME DELL'UTENTE
-    const nameSurname = document.getElementById("user-name")
+    const nameSurnameInput = document.getElementById("user-name")
+    const nameSurname = nameSurnameInput.value
     console.log(nameSurname);
     // SALVIAMO I KM CHE IL CLIENTE VUOLE FARE
-    const kmDistance = document.getElementById("distance");
+    const kmDistanceInput = document.getElementById("distance");
+    const kmDistance = kmDistanceInput.value
     console.log(kmDistance);
     // SALVIAMO L'ETA' DEL CLIENTE
-    const userAge = document.getElementById("user-age")
+    const userAgeInput = document.getElementById("user-age")
+    const userAge = userAgeInput.value
     console.log(userAge);
+
 } )
