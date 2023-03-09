@@ -43,7 +43,7 @@ shopBtn.addEventListener("click", function() {
     // STAMPIAMO IL PREZZO IN PAGINA
     document.getElementById("user").innerHTML = `${nameSurname}`
     document.getElementById("ticket-typeof").innerHTML = `${ticket}`
-    document.getElementById("wagon-num").innerHTML = `${rndNumber}`
-    document.getElementById("cp-code").innerHTML = `${anotherNumber}`
+    document.getElementById("wagon-num").innerHTML = `${anotherNumber}`
+    document.getElementById("cp-code").innerHTML = `${rndNumber}`
     document.getElementById("final-price").innerHTML = `€${finalPrice}`
 } )
